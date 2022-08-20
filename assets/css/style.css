@@ -156,20 +156,38 @@ html{
     display: block;
 }
 
-#header .search-icon{
+#header .search-icon, #header .menu-icon{
     color: #fff;
-    
     line-height: 46px;
+    font-size: 20px;
 }
-#header .search-btn{
+
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .search-btn, #header .mobile-menu-btn{
     float: right;
     padding: 0px 24px;
     
 }
+
 #header .search-btn:hover{
     background-color: #f44336;
     cursor: pointer;
 }
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
 
 #slider{
     background-color: #333  ;
@@ -202,6 +220,7 @@ html{
  /* About-Section  */
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 74px 16px;
     margin-right: auto;
     margin-left: auto;
